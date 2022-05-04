@@ -38,13 +38,16 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "rest_framework.authtoken",
 ]
 
 PROJECT_APPS = [
     "core.apps.CoreConfig",
+    "users.apps.UsersConfig",
     "questions.apps.QuestionsConfig",
     "comments.apps.CommentsConfig",
-    "users.apps.UsersConfig",
+    "events.apps.EventsConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
@@ -94,6 +97,13 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.TokenAuthentication",
+    ],
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
+}
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
@@ -116,6 +126,10 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "Europe/Moscow"
+
+DATETIME_FORMAT = "%Y-%m-%d%H:%M:%S"
+
+L10N = False
 
 USE_I18N = True
 

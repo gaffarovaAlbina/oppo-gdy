@@ -13,7 +13,7 @@ class TimeStampedModel(models.Model):
 class AbstractItem(TimeStampedModel):
     """Абстрактный объект"""
 
-    name = models.CharField(max_length=100)
+    text = models.TextField(default="")
 
     class Meta:
         abstract = True

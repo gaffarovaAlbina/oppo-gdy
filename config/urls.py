@@ -23,6 +23,7 @@ urlpatterns = [
     path("questions/", include("questions.urls", namespace="questions")),
     path("users/", include("users.urls", namespace="users")),
     path("comments/", include("comments.urls", namespace="comments")),
+    path("events/", include("events.urls", namespace="events")),
 ]
 
 if settings.DEBUG:
