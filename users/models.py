@@ -10,7 +10,7 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ()
 
     patronymic = models.CharField(max_length=150, null=True, blank=True)
-    position = models.CharField(max_length=200, default="")
+    position = models.CharField(max_length=80, default="")
     avatar = models.ImageField(null=True, blank=True, upload_to="avatars")
 
     def get_full_name(self):

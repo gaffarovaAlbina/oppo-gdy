@@ -28,7 +28,7 @@ class Question(core_models.AbstractItem):
         null=True,
     )
     public = models.BooleanField(default=False)
-    answer = models.TextField(null=True, blank=True)
+    answer = models.TextField(null=True, blank=True, default="")
     created_answer = models.DateTimeField(null=True, blank=True)
     category = models.CharField(
         max_length=20, choices=CATEGORIES, null=True, blank=True

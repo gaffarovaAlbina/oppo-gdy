@@ -8,6 +8,10 @@ django = "*"
 pillow = "*"
 django-dotenv = "*"
 djangorestframework = "*"
+django-seed = "*"
+faker = "*"
+pandas = "*"
+psycopg2 = "*"
 
 [dev-packages]
 black = "*"

@@ -50,6 +50,10 @@ PROJECT_APPS = [
     "events.apps.EventsConfig",
 ]
 
+THIRD_PARTY_APPS = [
+    "django-seed",
+]
+
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
@@ -140,6 +144,11 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = "static/"
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
 
 AUTH_USER_MODEL = "users.User"
 
