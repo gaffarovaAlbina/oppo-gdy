@@ -10,6 +10,7 @@
 # `Pipfile.lock` and then regenerate `requirements*.txt`.
 ################################################################################
 
+dj-database-url
 django
 django-dotenv
 django-seed
@@ -18,3 +19,4 @@ faker
 pandas
 pillow
 psycopg2
+whitenoise
