@@ -151,6 +151,7 @@ USE_TZ = False
 # The URL to use when referring to static files (where they will be served from)
 STATIC_URL = "static/"
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/

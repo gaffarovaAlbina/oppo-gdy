@@ -14,13 +14,14 @@ pandas = "*"
 psycopg2 = "*"
 dj-database-url = "*"
 whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 black = "*"
 pipenv-to-requirements = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
 
 [pipenv]
 allow_prereleases = true

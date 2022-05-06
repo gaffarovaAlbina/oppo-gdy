@@ -16,6 +16,7 @@ django-dotenv
 django-seed
 djangorestframework
 faker
+gunicorn
 pandas
 pillow
 psycopg2
