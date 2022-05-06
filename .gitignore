@@ -140,8 +140,8 @@ cython_debug/
 uploads/
 
 # management folders
-comments/management
-core/management
-events/management
-questions/management
-users/management
+comments/management/
+core/management/
+events/management/
+questions/management/
+users/management/
