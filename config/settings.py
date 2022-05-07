@@ -44,8 +44,8 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    "core.apps.CoreConfig",
     "users.apps.UsersConfig",
+    "core.apps.CoreConfig",
     "questions.apps.QuestionsConfig",
     "comments.apps.CommentsConfig",
     "events.apps.EventsConfig",
